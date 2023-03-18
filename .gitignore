@@ -1,4 +1,14 @@
 *.class
 *.log
-.idea*
-target
+/.metadata/
+/.idea/
+/bin/
+
+/.cache-main
+/.cache-tests
+/.classpath
+/.project
+/.settings
+/target
+/project/target/
+/project/project/
