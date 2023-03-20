@@ -4,15 +4,13 @@ version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.12.12"
+scalaVersion := "2.13.10"
 
-val reactiveMongoVer = "1.1.0-play26-RC9"
+val reactiveMongoVer = "1.1.0-play28-RC9"
 
 libraryDependencies ++= Seq(
   guice,
   "org.reactivemongo"      %% "play2-reactivemongo" % reactiveMongoVer,
-  "io.swagger"             %% "swagger-play2"       % "1.7.1",
-  "org.webjars"            %  "swagger-ui"          % "3.22.2",
   "org.scalatestplus.play" %% "scalatestplus-play"  % "5.1.0" % Test
 )
 
